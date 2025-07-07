@@ -6,7 +6,7 @@
 
 > ✨ Simple. 🔧 Hackable. 🧩 Ideal for minimal setups and custom Arch installs.
 
-🌐 **Visit the official website:** [world-compute.com](https://www.world-compute.com)  
+🌐 **Visit the official website:** [world-compute.com](https://dev.world-compute.com)  
 Browse available packages, get installation tips, and learn how to contribute.
 
 💡 **Tip:** It's recommended to run the package manager from your home directory for simplicity and easier stuff.

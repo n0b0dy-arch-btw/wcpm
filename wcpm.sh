@@ -25,7 +25,9 @@ install_package() {
 # === USAGE ===
 usage() {
     echo "Usage: $0 install <pkg1> [pkg2] ..."
-    echo "Version 0.4"
+    echo "Version 0.5"
+    echo "package manager made by n0b0dy-arch-btw"
+    echo "welcome to wcpm"
     exit 1
 }
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # === CONFIGURATION ===
-BASE_URL="https://world-compute.com/packages"  # your GitHub Pages URL
+BASE_URL="https://dev.world-compute.com/packages"  # your GitHub Pages URL
 TMP_DIR="/tmp/wcpm"                              # temporary download dir
 mkdir -p "$TMP_DIR"
 
@@ -25,7 +25,7 @@ install_package() {
 # === USAGE ===
 usage() {
     echo "Usage: $0 install <pkg1> [pkg2] ..."
-    echo "Version 0.3"
+    echo "Version 0.4"
     exit 1
 }
 

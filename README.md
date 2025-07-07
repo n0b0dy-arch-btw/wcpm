@@ -2,7 +2,7 @@
 
 **WCPM** is a lightweight, script-driven package manager designed for Arch Linux systems. It downloads and executes `.sh` installer scripts hosted on the website/GitHub Pages—no package database, no clutter—just clean and customizable Bash.
 
-![WCPM Logo](https://world-compute.com/logo.png)
+![WCPM Logo](https://dev.world-compute.com/logo.png)
 
 > ✨ Simple. 🔧 Hackable. 🧩 Ideal for minimal setups and custom Arch installs.
 

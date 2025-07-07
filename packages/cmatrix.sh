@@ -2,7 +2,7 @@
 
 # === PACKAGE METADATA ===
 PKG_NAME="cmatrix"
-DESCRIPTION="shows text flying in and out in a terminal like as seen in "The Matrix" movie"
+DESCRIPTION="shows text flying in and out in a terminal like as seen in The Matrix movie"
 AUTHOR="n0b0dy-arch-btw"
 
 # === DISPLAY PACKAGE INFO ===

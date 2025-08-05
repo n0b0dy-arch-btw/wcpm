@@ -47,8 +47,8 @@ verify_install() {
 }
 
 countdown() {
-    echo -e "${BLUE}[*] Simulating install time...${RESET}"
-    for i in {20..1}; do
+    echo -e "${BLUE}[*] Finishing installation...${RESET}"
+    for i in {5..1}; do
         printf "\r    %2d seconds remaining..." "$i"
         sleep 1
     done

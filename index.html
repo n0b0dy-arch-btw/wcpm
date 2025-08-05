@@ -1,59 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link rel="icon" type="image/png" href="logo.png" />
-  <title>World Compute Package Manager</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #0e1117;
-      color: #e6edf3;
-      margin: 2rem;
-    }
-    h1 { color: #58a6ff; }
-    code { background: #161b22; padding: 2px 5px; border-radius: 4px; }
-    a { color: #58a6ff; text-decoration: none; }
-    .pkg-list { margin-top: 1rem; }
-    .pkg-list li { margin: 0.5rem 0; }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Compute Package Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png" />
+  </head>
+  <body class="bg-gray-900 text-gray-100 font-sans">
+    <header class="p-6 bg-gray-800 border-b border-gray-700">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-3xl font-bold text-blue-400">🌍 World Compute Package Manager</h1>
+        <p class="text-gray-400 mt-2">Lightweight Bash package manager for Linux</p>
+        <p class="text-sm text-gray-500">Made with ❤️ by <a href="https://github.com/n0b0dy-arch-btw" class="text-blue-500 underline">n0b0dy-arch-btw</a></p>
+      </div>
+    </header>
 
-  <h1>🌍 world-compute-pkg-mngr</h1>
-  <p><strong>Lightweight Bash package manager for Linux.</strong></p>
-  <p><strong>Easy to use package manger made with shell scripts.</strong></p>
-  <p><strong>Join the discord at the bottom of the page join to give sugestions and package ideas and if there are bugs</strong></p>
+    <main class="max-w-4xl mx-auto p-6">
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold text-blue-300 mb-2">📥 How to Install (NEW INSTALLER SCRIPT)</h2>
+        <pre class="bg-gray-800 p-4 rounded-md overflow-x-auto text-sm"><code>curl -LO https://pkg.world-compute.com/installer.sh
+chmod +x installer.sh
+wcpm install|uninstall &lt;package&gt;</code></pre>
+      </section>
 
-  <h2>📥 How to Install</h2>
-  <pre><code>curl -LO https://pkg.world-compute.com/wcpm.sh
-chmod +x wcpm.sh
-./archpm.sh install neofetch</code></pre>
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold text-blue-300 mb-4">📦 Available Packages</h2>
+        <div class="grid gap-4 md:grid-cols-2">
+          <!-- Package Cards -->
+          <div class="bg-gray-800 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold">neofetch</h3>
+            <p class="text-sm text-gray-400">A command-line system information tool</p>
+            <div class="mt-2">
+              <p class="text-sm">Install: <code class="bg-gray-700 px-1 rounded">wcpm install neofetch</code></p>
+              <p class="text-sm">Uninstall: <code class="bg-gray-700 px-1 rounded">wcpm uninstall neofetch-uninstall</code> ❌ manual removal required</p>
+            </div>
+          </div>
 
-  <h2>📦 Available Packages</h2>
-  <ul class="pkg-list">
-    <li><a href="https://pkg.world-compute.com/packages/neofetch.sh">neofetch</a> – A command-line system information tool</li>
+          <div class="bg-gray-800 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold">net-tools</h3>
+            <p class="text-sm text-gray-400">Includes tools for controlling the Linux network subsystem</p>
+            <div class="mt-2">
+              <p class="text-sm">Install: <code class="bg-gray-700 px-1 rounded">wcpm install net-tools</code></p>
+              <p class="text-sm">Uninstall: <code class="bg-gray-700 px-1 rounded">wcpm uninstall net-tools-uninstall</code> ❌ manual removal required</p>
+            </div>
+          </div>
 
-    <li><a href="https://pkg.world-compute.com/packages/neofetch.sh">net-tools</a> – This package includes the important tools for controlling the network subsystem of the Linux kernel</li>
+          <div class="bg-gray-800 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold">htop</h3>
+            <p class="text-sm text-gray-400">Interactive process viewer (CPU/RAM monitor)</p>
+            <div class="mt-2">
+              <p class="text-sm">Install: <code class="bg-gray-700 px-1 rounded">wcpm install htop</code></p>
+              <p class="text-sm">Uninstall: <code class="bg-gray-700 px-1 rounded">wcpm uninstall htop-uninstall</code> ✅</p>
+            </div>
+          </div>
 
-    <li><a href="https://pkg.world-compute.com/packages/htop.sh">htop</a> – interactive process viewer. to view cpu usage ram and process.</li>
+          <div class="bg-gray-800 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold">cmatrix</h3>
+            <p class="text-sm text-gray-400">Terminal "Matrix" rain animation</p>
+            <div class="mt-2">
+              <p class="text-sm">Install: <code class="bg-gray-700 px-1 rounded">wcpm install cmatrix</code></p>
+              <p class="text-sm">Uninstall: <code class="bg-gray-700 px-1 rounded">wcpm uninstall cmatrix-uninstall</code> ✅</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <li><a href="https://pkg.world-compute.com/packages/cmatrix.sh">cmatrix</a> – shows text flying in and out in a terminal like as seen in "The Matrix" movie"</li>
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold text-blue-300">🖥️ Distro Compatibility</h2>
+        <ul class="list-disc pl-6 text-gray-400 mt-2 space-y-1">
+          <li><span class="text-white font-medium">Arch Linux:</span> Built for and tested on Arch. Best experience.</li>
+          <li>Debian/Ubuntu (should work, not tested)</li>
+          <li>Fedora (should work, not tested)</li>
+          <li>Alpine Linux (may work, depends on installed base packages)</li>
+          <li>Any system with Bash and <code class="bg-gray-700 px-1 rounded text-sm">curl</code></li>
+        </ul>
+      </section>
 
-    
-  </ul>
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold text-blue-300">🛠️ Updates</h2>
+        <p class="text-gray-400 mt-2">None yet.</p>
+      </section>
 
-<h2>🛠️ Updates</h2>
-  <p>a installer script is being build to make the install much more easy and more</p>
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold text-blue-300">🔧 Make Your Own Package</h2>
+        <p class="text-gray-400 mt-2">Each package is just a Bash <code class="bg-gray-700 px-1 rounded">.sh</code> script hosted remotely.</p>
+      </section>
 
-  <h2>🔧 Make Your Own</h2>
-  <p>Each package is just a <code>.sh</code></p>
-  
-  <p>Made with ❤️ by <a href="https://github.com/n0b0dy-arch-btw">n0b0dy-arch-btw</a></p>
-  
-  <h2>💬 join the discord</h2>
-  <a href="https://discord.gg/8ZyaC3sGXS">Click me to join</a>
+      <section>
+        <h2 class="text-xl font-semibold text-blue-300">💬 Join the Community</h2>
+        <p class="mt-2"><a href="https://discord.gg/8ZyaC3sGXS" class="text-blue-400 underline">Join our Discord for suggestions, bugs, and community support</a></p>
+      </section>
+    </main>
 
-</body>
+    <footer class="p-6 text-center text-gray-500 text-sm border-t border-gray-700">
+      World Compute Package Manager — Version 0.7
+    </footer>
+  </body>
 </html>

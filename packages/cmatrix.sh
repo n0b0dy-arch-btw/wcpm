@@ -4,7 +4,7 @@ set -e
 
 # === METADATA ===
 PKG_NAME="cmatrix"
-DESCRIPTION="Interactive process viewer — see CPU, RAM and system processes."
+DESCRIPTION="hacker mode :D"
 AUTHOR="n0b0dy-arch-btw"
 REPO_URL="https://github.com/abishekvashok/cmatrix.git"
 

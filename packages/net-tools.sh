@@ -25,7 +25,7 @@ banner() {
     echo -e "${RESET}"
 }
 
-# === Verification Spinner ===
+# === Spinner ===
 spinner() {
     local pid=$!
     local delay=0.1
@@ -76,6 +76,15 @@ fi
 
 verify_install
 
+# === Take file snapshot BEFORE install ===
+LOG_DIR="/var/lib/wcpm/packages"
+LOG_FILE="$LOG_DIR/$PKG_NAME.list"
+SNAP_BEFORE="/tmp/wcpm-before.txt"
+SNAP_AFTER="/tmp/wcpm-after.txt"
+
+sudo mkdir -p "$LOG_DIR"
+sudo find /usr/local -type f > "$SNAP_BEFORE"
+
 # === Installation Steps ===
 STEP_1="git clone https://github.com/ecki/net-tools.git"
 STEP_2="cd net-tools"
@@ -101,6 +110,12 @@ for i in {1..10}; do
     fi
 done
 
+# === Take snapshot AFTER install and track changes ===
+sudo find /usr/local -type f > "$SNAP_AFTER"
+comm -13 <(sort "$SNAP_BEFORE") <(sort "$SNAP_AFTER") > "/tmp/wcpm-diff.txt"
+sudo mv "/tmp/wcpm-diff.txt" "$LOG_FILE"
+
 countdown
 
 echo -e "\n${GREEN}[✔] '$PKG_NAME' installed successfully!${RESET}\n"
+echo -e "${YELLOW}[*] Installed files tracked at:${RESET} $LOG_FILE"

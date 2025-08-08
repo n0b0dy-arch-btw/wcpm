@@ -88,7 +88,7 @@ sudo find /usr/local -type f > "$SNAP_BEFORE"
 
 # === Installation Steps ===
 STEP_1="git clone https://github.com/n0b0dy-arch-btw/star.git"
-STEP_2="./star.sh"
+STEP_2=""
 STEP_3=""
 STEP_4=""
 STEP_5=""

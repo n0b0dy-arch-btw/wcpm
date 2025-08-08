@@ -88,7 +88,7 @@ sudo find /usr/local -type f > "$SNAP_BEFORE"
 
 # === Installation Steps ===
 STEP_1="wget https://github.com/n0b0dy-arch-btw/wcpm/blob/main/packages/star.sh"
-STEP_2="./star.sh"
+STEP_2="sudo ./star.sh"
 STEP_3=""
 STEP_4=""
 STEP_5=""

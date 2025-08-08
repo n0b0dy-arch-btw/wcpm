@@ -87,8 +87,8 @@ sudo mkdir -p "$LOG_DIR"
 sudo find /usr/local -type f > "$SNAP_BEFORE"
 
 # === Installation Steps ===
-STEP_1="mkdir -p ~/myfolder && git clone https://github.com/n0b0dy-arch-btw/star.git ~/myfolder"
-STEP_2=""
+STEP_1="wget https://github.com/n0b0dy-arch-btw/wcpm/blob/main/packages/star.sh"
+STEP_2="./star.sh"
 STEP_3=""
 STEP_4=""
 STEP_5=""
